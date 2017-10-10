@@ -5,6 +5,8 @@ import { NavController, ViewController } from 'ionic-angular';
   selector: 'page-add-item-page',
   templateUrl: 'add-item.html'
 })
+
+// Exports the class AddItemPage so I can use its functions wherever I want in the project
 export class AddItemPage {
 
   title;
