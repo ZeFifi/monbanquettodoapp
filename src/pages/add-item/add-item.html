@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-        Add Item
+        Add a todo
     </ion-title>
         <ion-buttons end>
             <button ion-button icon-only (click)="close()"><ion-icon name="close"></ion-icon></button>
@@ -10,23 +10,25 @@
 </ion-header>
 
 <ion-content>
-    <ion-list>
 
-      <ion-item> <!-- Allows the user to type a title for the todo -->
+      <ion-item padding>
+				<!-- Allows the user to type a title for the todo -->
         <ion-label floating>Title</ion-label>
 				<!-- Binds the view with the controller add-item.ts -->
         <ion-input type="text" [(ngModel)]="title"></ion-input>
       </ion-item>
 
-      <ion-item> <!-- Allows the user to type a description for the todo -->
+      <ion-item padding>
+				<!-- Allows the user to type a description for the todo -->
         <ion-label floating>Description</ion-label>
 				<!-- Binds the view with the controller add-item.ts -->
         <ion-input type="text" [(ngModel)]="description"></ion-input>
       </ion-item>
 
-    </ion-list>
 
 		<!-- Binds the view with the controller add-item.ts -->
-    <button full ion-button color="secondary" (click)="saveItem()">Save</button>
+		<div padding>
+			<button full padding ion-button color="secondary" (click)="saveItem()">Save</button>
+		</div>
 
 </ion-content>

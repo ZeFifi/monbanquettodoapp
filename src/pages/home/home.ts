@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { ModalController, NavController } from 'ionic-angular';
+import { AddItemPage } from '../add-item/add-item'
 
 @Component({
   selector: 'page-home',
@@ -7,28 +8,34 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  public items // Declares items to public, meaning that they could be accessed anywhere.
+  public items = []; // Declares items to public, meaning that they could be accessed anywhere.
 
-  constructor(public navCtrl: NavController) {
-
-  }
-
-  ionViewDidLoad() { // Loads the tasks
-
-    this.items = [
-      { title: 'hi1', description: 'test1' },
-      { title: 'hi2', description: 'test2' },
-      { title: 'hi3', description: 'test3' }
-    ];
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController ) {
 
   }
 
-  addItem() { // Adds a task
+  ionViewDidLoad(){ // Loads the tasks
+		
+  }
+
+  addItem(){
+
+    let addModal = this.modalCtrl.create(AddItemPage);
+    // call back when modal dismissed
+    addModal.onDidDismiss((item) => {
+      if(item){
+        this.saveItem(item);
+      }
+    });
+    addModal.present();
 
   }
 
-  viewItem() {
+  viewItem(item){
+  }
 
+  saveItem(item){
+    this.items.push(item);
   }
 
 }
