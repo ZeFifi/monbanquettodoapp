@@ -13,6 +13,6 @@
 <ion-content padding>
 	<!-- Displaying the list of the items from the todo -->
 	<ion-list>
-		<ion-item *ngFor="let item of items" (click)="viewItem(item)">{{item.title}}</ion-item>
+		<ion-card *ngFor="let item of items" (click)="viewItem(item)">{{item.title}}</ion-card>
 	</ion-list>
 </ion-content>
