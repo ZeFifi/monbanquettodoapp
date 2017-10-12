@@ -6,8 +6,6 @@ Here are some screenshots of it so you can visualize the work I've done :
 
 ![todoAppImage](https://github.com/ZeFifi/monbanquettodoapp/blob/master/src/app.png?raw=true)
 
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
-
 ## How to use this template
 
 *This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
