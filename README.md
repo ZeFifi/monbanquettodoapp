@@ -1,6 +1,6 @@
 # Todo app
 
-This todo app has been developed with **Ionic 2** and **Angular 2**.
+This todo app has been developed with **Ionic 2**, **Angular 2** and **Typescript**.
 
 Here are some screenshots of it so you can visualize the work I've done :
 
