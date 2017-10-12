@@ -1,4 +1,10 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Todo app
+
+This todo app has been developed with **Ionic 2** and **Angular 2**.
+
+Here are some screenshots of it so you can visualize the work I've done :
+
+![todoAppImage](https://github.com/ZeFifi/monbanquettodoapp/blob/master/src/app.png?raw=true)
 
 ## How to use this template
 
@@ -23,5 +29,3 @@ $ ionic cordova run ios
 ```
 
 Substitute ios for android if not on a Mac.
-
-# monbanquettodoapp
